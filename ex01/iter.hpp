@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 01:24:47 by abenheni          #+#    #+#             */
-/*   Updated: 2024/03/21 01:49:54 by abenheni         ###   ########.fr       */
+/*   Updated: 2024/03/21 01:56:47 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 #define ITER_HPP
 #include <iostream>
 
-template<typename T, typename fun>
-void iter(T *arr, size_t len, fun func)
+template<typename T>
+void iter(T *arr, size_t len, void (*func)(T el))
 {
     size_t i;
 
