@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 14:34:25 by abenheni          #+#    #+#             */
-/*   Updated: 2024/04/17 18:03:28 by abenheni         ###   ########.fr       */
+/*   Updated: 2024/04/17 18:06:34 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,22 @@ int main()
         std::cout << "arr3[1]: " << arr3[1] << std::endl;
         std::cout << "arr3[2]: " << arr3[2] << std::endl;
         
+
+        // test with const
+        const Array<int> arr4 = arr2;
+        std::cout << "arr4 size: " << arr4.size() << std::endl;
+
+        // Test subscript operator
+        // arr4[0] = 10;
+        // arr4[1] = 20;
+        // arr4[2] = 30;
+        std::cout << "arr4[0]: " << arr4[0] << std::endl;
+        std::cout << "arr4[1]: " << arr4[1] << std::endl;
+        std::cout << "arr4[2]: " << arr4[2] << std::endl;
+
+        
         // Test out-of-bounds access
-        arr3[5] = 100;
+        arr3[5] = 100; 
     }
     catch(const std::exception &e)
     {
