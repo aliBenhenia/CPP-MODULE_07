@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 14:34:44 by abenheni          #+#    #+#             */
-/*   Updated: 2024/03/21 15:22:07 by abenheni         ###   ########.fr       */
+/*   Updated: 2024/04/17 14:48:17 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,13 @@
 template <class T>
 class Array
 {
-    private:   
+    private:
         T       *data;
         size_t  len;
     public:
         Array()
         {
-            data = nullptr;
+            data = NULL;
             len = 0;
         }
         Array(Array &obj)
