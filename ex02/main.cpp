@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 14:34:25 by abenheni          #+#    #+#             */
-/*   Updated: 2024/03/21 15:23:20 by abenheni         ###   ########.fr       */
+/*   Updated: 2024/04/17 18:03:28 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,9 @@ int main()
         std::cout << "arr3[0]: " << arr3[0] << std::endl;
         std::cout << "arr3[1]: " << arr3[1] << std::endl;
         std::cout << "arr3[2]: " << arr3[2] << std::endl;
-
+        
         // Test out-of-bounds access
-        arr3[5] = 100; 
+        arr3[5] = 100;
     }
     catch(const std::exception &e)
     {

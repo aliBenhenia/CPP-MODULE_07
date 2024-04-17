@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 14:34:44 by abenheni          #+#    #+#             */
-/*   Updated: 2024/04/17 14:48:17 by abenheni         ###   ########.fr       */
+/*   Updated: 2024/04/17 17:56:05 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,16 @@
 #include <iostream>
 #include <string>
 
-template <class T>
+template <typename T>
 class Array
 {
-    private:
+    private:   
         T       *data;
         size_t  len;
     public:
         Array()
         {
-            data = NULL;
+            data = nullptr;
             len = 0;
         }
         Array(Array &obj)
@@ -70,6 +70,12 @@ class Array
         }
         // Subscript operator
         T& operator[](unsigned int index)
+        {
+            if (index >= len)
+                throw std::out_of_range("invalid Index ");
+            return (data[index]);
+        }
+        const T& operator[](unsigned int index)const
         {
             if (index >= len)
                 throw std::out_of_range("invalid Index ");

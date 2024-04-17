@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 00:40:31 by abenheni          #+#    #+#             */
-/*   Updated: 2024/04/03 02:03:16 by abenheni         ###   ########.fr       */
+/*   Updated: 2024/04/17 17:35:28 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ int main( void )
     std::cout << "min( a, b ) = " << min( a, b ) << std::endl;
     std::cout << "max( a, b ) = " << max( a, b ) << std::endl;
     std::cout << "-------------------------------------" << std::endl;
-    std::string c = "chaine1";
-    std::string d = "chaine2";
+    std::string c = "ali";
+    std::string d = "aya";
     swap(c, d);
     std::cout << "c = " << c << ", d = " << d << std::endl;
     std::cout << "min( c, d ) = " << ::min( c, d ) << std::endl;
